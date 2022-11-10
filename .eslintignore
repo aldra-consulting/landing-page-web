@@ -1,0 +1,13 @@
+dist
+coverage
+node_modules
+
+.gitignore
+.eslintignore
+.husky
+.lintstagedrc
+.vscode
+
+package-lock.json
+
+*.css

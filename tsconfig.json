@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es5",
+    "module": "esnext",
+    "lib": [
+      "esnext",
+      "dom",
+      "webworker",
+      "dom.iterable"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "noEmit": true,
+    "types": [
+      "node",
+      "vite/client"
+    ],
+    "paths": {
+      "@app/*": [
+        "*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "adaptors"
+  ],
+  "files": [
+    "vite.config.ts",
+    "jest.config.ts",
+    "commitlint.config.ts"
+  ]
+}
