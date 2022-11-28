@@ -1,0 +1,27 @@
+main#page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #2d3741;
+}
+
+main#page > #logo {
+  width: 50%;
+  max-width: 400px;
+  margin: auto;
+  will-change: transform, opacity;
+  animation: logo-animation 1s cubic-bezier(1, 0, 0, 1) normal forwards;
+  box-shadow: 0 0 1px rgb(255 255 255 / 0%);
+}
+
+@keyframes logo-animation {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
