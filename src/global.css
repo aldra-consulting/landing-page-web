@@ -21,4 +21,5 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  background: #2d3741;
 }
