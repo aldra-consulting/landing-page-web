@@ -55,11 +55,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ALDRA_GITHUB_BOT_TOKEN }}
         run: npx semantic-release
 
-      - name: Capture new version
-        run: echo "VERSION=$(cat .VERSION)" >> $GITHUB_ENV
-
       - name: Configure AWS credentials
-        if: env.VERSION != ''
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
