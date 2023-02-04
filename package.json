@@ -50,8 +50,8 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^0.16.2",
-    "@builder.io/qwik-city": "^0.1.0-beta9",
+    "@builder.io/qwik": "^0.17.4",
+    "@builder.io/qwik-city": "^0.1.0-beta13",
     "@builder.io/qwik-react": "^0.2.1",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
@@ -73,7 +73,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-qwik": "^0.16.2",
+    "eslint-plugin-qwik": "^0.17.4",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.2",
