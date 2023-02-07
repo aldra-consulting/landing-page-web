@@ -1,7 +1,7 @@
 {
   "name": "@aldra/landing-page-web",
   "description": "Organisation's landing page.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:aldra-consulting/landing-page-web.git"
