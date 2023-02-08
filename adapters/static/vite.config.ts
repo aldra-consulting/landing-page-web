@@ -13,7 +13,8 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: 'https://aldra.no'
+        origin: 'https://aldra.no',
+        emit404Pages: false
       })
     ]
   };
