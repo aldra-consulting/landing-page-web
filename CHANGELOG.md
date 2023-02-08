@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/aldra-consulting/landing-page-web/compare/1.1.0...1.2.0) (2023-02-08)
+
+
+### Features
+
+* **project:** disable default 404 page ([584133f](https://github.com/aldra-consulting/landing-page-web/commit/584133f24268b91fa56c650d694d1c86fedb9f63))
+
 # [1.1.0](https://github.com/aldra-consulting/landing-page-web/compare/1.0.0...1.1.0) (2023-02-07)
 
 
