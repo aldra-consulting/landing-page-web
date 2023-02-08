@@ -28,7 +28,7 @@
     "build": "run-s clean:dist clean:server typescript:compile build:qwik",
     "build:qwik": "qwik build",
     "build.client": "vite build",
-    "build.server": "vite build -c adaptors/static/vite.config.ts",
+    "build.server": "vite build -c adapters/static/vite.config.ts",
     "build:preview": "vite build --ssr src/entry.preview.tsx",
     "typescript:compile": "tsc",
     "lint:project": "run-p lint:eslint:project lint:stylelint:project",

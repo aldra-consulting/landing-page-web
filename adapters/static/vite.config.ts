@@ -1,4 +1,4 @@
-import { staticAdaptor } from '@builder.io/qwik-city/adaptors/static/vite';
+import { staticAdapter } from '@builder.io/qwik-city/adapters/static/vite';
 import { extendConfig } from '@builder.io/qwik-city/vite';
 
 import baseConfig from '../../vite.config';
@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
       }
     },
     plugins: [
-      staticAdaptor({
+      staticAdapter({
         origin: 'https://aldra.no'
       })
     ]
