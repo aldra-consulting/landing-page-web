@@ -36,6 +36,8 @@ export const RouterHead = component$(() => {
       {head.styles.map(({ props, style }) => (
         <style {...props} dangerouslySetInnerHTML={style} />
       ))}
+
+      <script src='/config.js'></script>
     </>
   );
 });

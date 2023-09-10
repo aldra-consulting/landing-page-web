@@ -9,6 +9,8 @@ server
 .lintstagedrc
 .vscode
 
+public/config.js
+
 package-lock.json
 
 *.css

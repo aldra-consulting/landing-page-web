@@ -12,4 +12,6 @@ server
 coverage
 node_modules
 
+public/config.js
+
 !.vscode/extensions.json

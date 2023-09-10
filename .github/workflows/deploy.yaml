@@ -46,6 +46,18 @@ jobs:
       - name: Build static website
         run: npm run build
 
+      - name: Install envsubst
+        run: |
+          sudo apt-get update
+          sudo apt-get install gettext-base
+
+      - name: Create configuration
+        env:
+          OIDC_ISSUER: ${{ vars.OIDC_ISSUER }}
+          OIDC_CLIENT_ID: ${{ vars.OIDC_CLIENT_ID }}
+          OIDC_SCOPES: ${{ vars.OIDC_SCOPES }}
+        run: envsubst < ./config.template > ./dist/config.js;
+
       - name: Release
         env:
           GIT_AUTHOR_NAME: ${{ steps.gpg.outputs.name }}
