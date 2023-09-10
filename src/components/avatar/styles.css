@@ -1,0 +1,22 @@
+abbr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background: #4285F4;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+abbr:hover {
+  background: #007dd3;
+}
