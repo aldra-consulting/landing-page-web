@@ -7,6 +7,16 @@ main#page {
   width: 100%;
 }
 
+main#page > #avatar-slot {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  will-change: transform, opacity;
+  transform-origin: center center;
+  opacity: 0;
+  animation: avatar-slot-animation 0.2s cubic-bezier(1, 0, 0, 1) 1s normal forwards;
+}
+
 main#page > #logo {
   width: 50%;
   max-width: 400px;
@@ -17,6 +27,18 @@ main#page > #logo {
 }
 
 @keyframes logo-animation {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes avatar-slot-animation {
   from {
     transform: scale(0);
     opacity: 0;
