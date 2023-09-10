@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/aldra-consulting/landing-page-web/compare/1.3.0...1.4.0) (2023-09-10)
+
+
+### Bug Fixes
+
+* use lazy loading ([5656ad4](https://github.com/aldra-consulting/landing-page-web/commit/5656ad408a39abaacff2ae9de463df7928ffef81))
+
+
+### Features
+
+* add auth service ([d614041](https://github.com/aldra-consulting/landing-page-web/commit/d614041eedcc2d2731c61683a5716069876eccc3))
+* add configured auth service ([d9c98ee](https://github.com/aldra-consulting/landing-page-web/commit/d9c98ee52f4954e1d3a4bf0e49fb60536de11171))
+* implement login functionality ([6ccc5f9](https://github.com/aldra-consulting/landing-page-web/commit/6ccc5f9496a6dd39dbd1ebed98d1012105482bde))
+
 # [1.3.0](https://github.com/aldra-consulting/landing-page-web/compare/1.2.0...1.3.0) (2023-09-10)
 
 
