@@ -24,16 +24,18 @@ export default component$(() => {
   useOnWindow(
     'load',
     $(async () => {
-      user.name = (await auth.getUser())?.profile.name;
+      user.name = (await auth().getUser())?.profile.name;
     })
   );
 
-  const signIn = $(() => auth.signIn());
+  const signIn = $(() => auth().signIn());
 
   const signOut = $(() =>
-    auth.signOut().then(() => {
-      user.name = undefined;
-    })
+    auth()
+      .signOut()
+      .then(() => {
+        user.name = undefined;
+      })
   );
 
   return (

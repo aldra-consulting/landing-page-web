@@ -7,7 +7,7 @@ export default component$(() => {
 
   useOnWindow(
     'load',
-    $(() => auth.completeSignIn().finally(navigateToRoot))
+    $(() => auth().completeSignIn().finally(navigateToRoot))
   );
 
   return <span hidden />;
