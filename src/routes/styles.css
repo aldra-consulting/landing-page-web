@@ -1,5 +1,8 @@
 main#page {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
 }
@@ -7,7 +10,7 @@ main#page {
 main#page > #logo {
   width: 50%;
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto;
   will-change: transform, opacity;
   animation: logo-animation 1s cubic-bezier(1, 0, 0, 1) normal forwards;
   box-shadow: 0 0 1px rgb(255 255 255 / 0%);
