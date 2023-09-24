@@ -19,12 +19,17 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 export default component$(() => {
   useStylesScoped$(styles);
 
-  const user = useStore<{ name?: string }>({});
+  const user = useStore<{ name?: string; isLoading?: boolean }>({});
 
   useOnWindow(
     'load',
     $(async () => {
-      user.name = (await auth().getUser())?.profile.name;
+      await auth()
+        .getUser()
+        .then(loggedInUser => {
+          user.name = loggedInUser?.profile.name;
+          user.isLoading = false;
+        });
     })
   );
 
@@ -35,18 +40,21 @@ export default component$(() => {
       .signOut()
       .then(() => {
         user.name = undefined;
+        user.isLoading = undefined;
       })
   );
 
   return (
     <main id='page'>
-      <div id='avatar-slot'>
-        {user.name ? (
-          <Avatar title={user.name} onClick$={signOut} />
-        ) : (
-          <SignInButton onClick$={signIn}>Logg inn</SignInButton>
-        )}
-      </div>
+      {user.isLoading === false && (
+        <div id='avatar-slot'>
+          {user.name ? (
+            <Avatar title={user.name} onClick$={signOut} />
+          ) : (
+            <SignInButton onClick$={signIn}>Logg inn</SignInButton>
+          )}
+        </div>
+      )}
       <Logo id='logo' theme={Theme.DARK} />
     </main>
   );
