@@ -9,6 +9,9 @@ export default class AuthService {
 
   signIn = async (): Promise<void> => this.#manager.signinRedirect();
 
+  signInSilent = async (): Promise<User | null> =>
+    this.#manager.signinSilent().catch(() => null);
+
   signOut = async (): Promise<void> => this.#manager.signoutRedirect();
 
   getUser = async (): Promise<User | null> => this.#manager.getUser();
