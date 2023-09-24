@@ -7,6 +7,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig(() => {
   return {
+    server: { port: 8003 },
     plugins: [qwikCity({ trailingSlash: false }), qwikVite(), tsconfigPaths()],
     resolve: {
       alias: [{ find: '@app', replacement: resolve(__dirname, 'src') }]
