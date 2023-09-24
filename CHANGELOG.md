@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/aldra-consulting/landing-page-web/compare/1.4.0...1.5.0) (2023-09-24)
+
+
+### Bug Fixes
+
+* fix avatar slot on the screen ([3a04e4b](https://github.com/aldra-consulting/landing-page-web/commit/3a04e4b506cffc07b1c828a5340c7f1c2010a12d))
+* sign-in flow ([9db979c](https://github.com/aldra-consulting/landing-page-web/commit/9db979cd4ff70d2ea2dd1c4b981868b7d6e5da93))
+
+
+### Features
+
+* add functionality for silent sign-in ([5f2e52f](https://github.com/aldra-consulting/landing-page-web/commit/5f2e52f470a583548d5c1d91d70d712a5b929897))
+
 # [1.4.0](https://github.com/aldra-consulting/landing-page-web/compare/1.3.0...1.4.0) (2023-09-10)
 
 
