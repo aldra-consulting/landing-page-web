@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/aldra-consulting/landing-page-web/compare/1.5.0...1.5.1) (2023-10-26)
+
+
+### Bug Fixes
+
+* always navigate to root after on completing sign-in ([b0f4d0b](https://github.com/aldra-consulting/landing-page-web/commit/b0f4d0b5f7667103088f0e7d700067ba9c06e545))
+
 # [1.5.0](https://github.com/aldra-consulting/landing-page-web/compare/1.4.0...1.5.0) (2023-09-24)
 
 
