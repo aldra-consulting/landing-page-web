@@ -5,6 +5,7 @@ export default class AuthService {
 
   constructor(manager: UserManager) {
     this.#manager = manager;
+    Log.setLogger(console);
     Log.setLevel(Log.DEBUG);
   }
 
