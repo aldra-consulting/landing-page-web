@@ -1,10 +1,11 @@
-import { User, UserManager } from 'oidc-client-ts';
+import { User, UserManager, Log } from 'oidc-client-ts';
 
 export default class AuthService {
   #manager: UserManager;
 
   constructor(manager: UserManager) {
     this.#manager = manager;
+    Log.setLevel(Log.DEBUG);
   }
 
   signIn = async (): Promise<void> => this.#manager.signinRedirect();
@@ -16,8 +17,8 @@ export default class AuthService {
 
   getUser = async (): Promise<User | null> => this.#manager.getUser();
 
-  completeSignIn = async (): Promise<User> =>
-    this.#manager.signinRedirectCallback();
+  completeSignIn = async (): Promise<void> =>
+    this.#manager.signinCallback().then();
 
   completeSilentSignIn = async (): Promise<void> =>
     this.#manager.signinSilentCallback();
