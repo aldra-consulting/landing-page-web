@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/aldra-consulting/landing-page-web/compare/1.5.2...1.5.3) (2023-10-27)
+
+
+### Bug Fixes
+
+* use signinCallback and set log level for debugging ([c4b44aa](https://github.com/aldra-consulting/landing-page-web/commit/c4b44aaa48da4153f30cce0524983e1498bcc7ae))
+
 ## [1.5.2](https://github.com/aldra-consulting/landing-page-web/compare/1.5.1...1.5.2) (2023-10-27)
 
 
