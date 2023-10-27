@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/aldra-consulting/landing-page-web/compare/1.5.4...1.5.5) (2023-10-27)
+
+
+### Bug Fixes
+
+* remove navigation ([8934089](https://github.com/aldra-consulting/landing-page-web/commit/893408915d3c49caf24b50ac7dd801a851c6efda))
+
 ## [1.5.4](https://github.com/aldra-consulting/landing-page-web/compare/1.5.3...1.5.4) (2023-10-27)
 
 
