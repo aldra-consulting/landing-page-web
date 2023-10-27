@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/aldra-consulting/landing-page-web/compare/1.5.1...1.5.2) (2023-10-27)
+
+
+### Bug Fixes
+
+* add logging to debug sign-in issue ([5e2785e](https://github.com/aldra-consulting/landing-page-web/commit/5e2785e8e4e37e5e853e4ab9c6cd7a5299219e0e))
+
 ## [1.5.1](https://github.com/aldra-consulting/landing-page-web/compare/1.5.0...1.5.1) (2023-10-26)
 
 
