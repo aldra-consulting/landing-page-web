@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/aldra-consulting/landing-page-web/compare/1.5.3...1.5.4) (2023-10-27)
+
+
+### Bug Fixes
+
+* use console logger ([ab67534](https://github.com/aldra-consulting/landing-page-web/commit/ab6753476b6628c614fae28edcd26b51f9d04502))
+
 ## [1.5.3](https://github.com/aldra-consulting/landing-page-web/compare/1.5.2...1.5.3) (2023-10-27)
 
 
