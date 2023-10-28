@@ -19,7 +19,7 @@ export default class AuthService {
   getUser = async (): Promise<User | null> => this.#manager.getUser();
 
   completeSignIn = async (): Promise<void> =>
-    this.#manager.signinCallback().then();
+    this.#manager.signinCallback().then(console.log).catch(console.error);
 
   completeSilentSignIn = async (): Promise<void> =>
     this.#manager.signinSilentCallback();
