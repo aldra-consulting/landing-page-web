@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/aldra-consulting/landing-page-web/compare/1.5.6...1.5.7) (2023-10-28)
+
+
+### Bug Fixes
+
+* use signInSilent for fetching user on main page ([4214b75](https://github.com/aldra-consulting/landing-page-web/commit/4214b753cb6fd56be4f0dcc967a0728de2204eb5))
+
 ## [1.5.6](https://github.com/aldra-consulting/landing-page-web/compare/1.5.5...1.5.6) (2023-10-28)
 
 
