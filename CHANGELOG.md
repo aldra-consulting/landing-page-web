@@ -1,3 +1,10 @@
+## [1.5.8](https://github.com/aldra-consulting/landing-page-web/compare/1.5.7...1.5.8) (2023-10-28)
+
+
+### Bug Fixes
+
+* use getUser for fetching user on main page ([cc6ed40](https://github.com/aldra-consulting/landing-page-web/commit/cc6ed4087f13320c46b1804df5495dff64243686))
+
 ## [1.5.7](https://github.com/aldra-consulting/landing-page-web/compare/1.5.6...1.5.7) (2023-10-28)
 
 
