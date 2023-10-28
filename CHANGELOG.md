@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/aldra-consulting/landing-page-web/compare/1.5.8...1.5.9) (2023-10-28)
+
+
+### Bug Fixes
+
+* add logging ([ac1a06c](https://github.com/aldra-consulting/landing-page-web/commit/ac1a06c948f4a0f989817b9aef94d5f9531afdc2))
+
 ## [1.5.8](https://github.com/aldra-consulting/landing-page-web/compare/1.5.7...1.5.8) (2023-10-28)
 
 
