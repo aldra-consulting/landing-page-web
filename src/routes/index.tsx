@@ -25,7 +25,7 @@ export default component$(() => {
     'load',
     $(async () => {
       await auth()
-        .signInSilent()
+        .getUser()
         .then(loggedInUser => {
           user.name = loggedInUser?.profile.name;
           user.isLoading = false;
