@@ -1,3 +1,10 @@
+## [1.5.10](https://github.com/aldra-consulting/landing-page-web/compare/1.5.9...1.5.10) (2023-10-28)
+
+
+### Bug Fixes
+
+* add debugger ([c8ac614](https://github.com/aldra-consulting/landing-page-web/commit/c8ac6141ea45c2f470baacc9ea00638cb668d350))
+
 ## [1.5.9](https://github.com/aldra-consulting/landing-page-web/compare/1.5.8...1.5.9) (2023-10-28)
 
 
