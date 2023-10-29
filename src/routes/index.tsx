@@ -23,14 +23,18 @@ export default component$(() => {
 
   useOnWindow(
     'load',
-    $(async () => {
-      await auth()
+    $(() =>
+      auth()
         .getUser()
+        .catch(auth().signInSilent)
+        .catch(() => null)
         .then(loggedInUser => {
           user.name = loggedInUser?.profile.name;
+        })
+        .finally(() => {
           user.isLoading = false;
-        });
-    })
+        })
+    )
   );
 
   const signIn = $(() => auth().signIn());
