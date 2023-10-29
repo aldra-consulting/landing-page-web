@@ -1,3 +1,10 @@
+## [1.5.12](https://github.com/aldra-consulting/landing-page-web/compare/1.5.11...1.5.12) (2023-10-29)
+
+
+### Bug Fixes
+
+* set background to html and body elements ([37c42bf](https://github.com/aldra-consulting/landing-page-web/commit/37c42bffe7663647fb894eecf87d0c8580e289d9))
+
 ## [1.5.11](https://github.com/aldra-consulting/landing-page-web/compare/1.5.10...1.5.11) (2023-10-29)
 
 
