@@ -149,8 +149,7 @@
           ".tsx"
         ]
       }
-    ],
-    "no-debugger": "off"
+    ]
   },
   "overrides": [
     {
