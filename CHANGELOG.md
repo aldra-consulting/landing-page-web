@@ -1,3 +1,10 @@
+## [1.5.14](https://github.com/aldra-consulting/landing-page-web/compare/1.5.13...1.5.14) (2023-10-29)
+
+
+### Bug Fixes
+
+* minor improvements ([c73dc86](https://github.com/aldra-consulting/landing-page-web/commit/c73dc862b6232015c157b5c21f050b9dfd3ffd51))
+
 ## [1.5.13](https://github.com/aldra-consulting/landing-page-web/compare/1.5.12...1.5.13) (2023-10-29)
 
 
