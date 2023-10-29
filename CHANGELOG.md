@@ -1,3 +1,11 @@
+## [1.5.13](https://github.com/aldra-consulting/landing-page-web/compare/1.5.12...1.5.13) (2023-10-29)
+
+
+### Bug Fixes
+
+* improve user fetching mechanism ([12b2bd5](https://github.com/aldra-consulting/landing-page-web/commit/12b2bd563ba684dab544373cb3cef65aaf4e9015))
+* remove unnecessary document head ([959e306](https://github.com/aldra-consulting/landing-page-web/commit/959e306202387e26609f8b69b1198f25883d1362))
+
 ## [1.5.12](https://github.com/aldra-consulting/landing-page-web/compare/1.5.11...1.5.12) (2023-10-29)
 
 
