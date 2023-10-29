@@ -16,10 +16,10 @@
 html,
 body {
   height: 100%;
+  background: #2d3741;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background: #2d3741;
 }
