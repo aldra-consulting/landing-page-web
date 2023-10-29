@@ -14,8 +14,6 @@ import { auth } from '@app/utils/auth';
 
 import styles from './styles.css?inline';
 
-import type { DocumentHead } from '@builder.io/qwik-city';
-
 export default component$(() => {
   useStylesScoped$(styles);
 
@@ -63,14 +61,3 @@ export default component$(() => {
     </main>
   );
 });
-
-export const head: DocumentHead = {
-  title: 'Aldra | IT-spesialister i verdensklasse',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Aldra er et norsk konsulenthus som bistår bedrifter med å finne smarte løsninger til morgendagends utfordringer.'
-    }
-  ]
-};
