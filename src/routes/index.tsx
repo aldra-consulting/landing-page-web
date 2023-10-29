@@ -40,7 +40,8 @@ export default component$(() => {
   const signOut = $(() =>
     auth()
       .signOut()
-      .then(() => {
+      .catch(() => {})
+      .finally(() => {
         user.name = undefined;
         user.isLoading = undefined;
       })
