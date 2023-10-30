@@ -5,6 +5,7 @@ import {
   useStore,
   useStylesScoped$
 } from '@builder.io/qwik';
+import { DocumentHead } from '@builder.io/qwik-city';
 
 import Avatar from '@app/components/avatar';
 import Logo from '@app/components/logo';
@@ -62,3 +63,14 @@ export default component$(() => {
     </main>
   );
 });
+
+export const head: DocumentHead = {
+  title: 'Aldra | IT-spesialister i verdensklasse',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Aldra er et norsk konsulenthus som bistår bedrifter med å finne smarte løsninger til morgendagends utfordringer.'
+    }
+  ]
+};
