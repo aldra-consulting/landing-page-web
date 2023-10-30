@@ -1,3 +1,10 @@
+## [1.5.15](https://github.com/aldra-consulting/landing-page-web/compare/1.5.14...1.5.15) (2023-10-30)
+
+
+### Bug Fixes
+
+* bring back document head ([a06c869](https://github.com/aldra-consulting/landing-page-web/commit/a06c869368c9b28d9d3254ae372e4a9f8777bc65))
+
 ## [1.5.14](https://github.com/aldra-consulting/landing-page-web/compare/1.5.13...1.5.14) (2023-10-29)
 
 
