@@ -1,3 +1,10 @@
+## [1.5.17](https://github.com/aldra-consulting/landing-page-web/compare/1.5.16...1.5.17) (2023-12-30)
+
+
+### Bug Fixes
+
+* add fallback favicon ([c8ec934](https://github.com/aldra-consulting/landing-page-web/commit/c8ec9349e2cc1a2d1a8ea6a525bd7ccdd706e784))
+
 ## [1.5.16](https://github.com/aldra-consulting/landing-page-web/compare/1.5.15...1.5.16) (2023-12-30)
 
 
