@@ -20,7 +20,31 @@ export const RouterHead = component$(() => {
       <title>{head.title}</title>
 
       <link rel='canonical' href={href} />
+
+      <link
+        rel='apple-touch-icon'
+        sizes='180x180'
+        href='/apple-touch-icon.png'
+      />
+      <link
+        rel='icon'
+        type='image/png'
+        sizes='32x32'
+        href='/favicon-32x32.png'
+      />
+      <link
+        rel='icon'
+        type='image/png'
+        sizes='16x16'
+        href='/favicon-16x16.png'
+      />
+      <meta name='apple-mobile-web-app-title' content='Aldra' />
+      <meta name='application-name' content='Aldra' />
+      <meta name='msapplication-TileColor' content='#2d3741' />
+      <meta name='theme-color' content='#2d3741' />
       <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+
+      <link rel='manifest' href='/manifest.json' />
 
       <link rel='preconnect' href='https://rsms.me/' />
       <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
