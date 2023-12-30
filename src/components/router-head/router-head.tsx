@@ -42,6 +42,7 @@ export const RouterHead = component$(() => {
       <meta name='application-name' content='Aldra' />
       <meta name='msapplication-TileColor' content='#2d3741' />
       <meta name='theme-color' content='#2d3741' />
+      <link rel='icon' href='/favicon.ico' sizes='any' />
       <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
 
       <link rel='manifest' href='/manifest.json' />
