@@ -1,3 +1,10 @@
+## [1.5.16](https://github.com/aldra-consulting/landing-page-web/compare/1.5.15...1.5.16) (2023-12-30)
+
+
+### Bug Fixes
+
+* improve favicon compatibility ([fdd81c2](https://github.com/aldra-consulting/landing-page-web/commit/fdd81c260383e5ae91b8bbe3e21281ceb1941187))
+
 ## [1.5.15](https://github.com/aldra-consulting/landing-page-web/compare/1.5.14...1.5.15) (2023-10-30)
 
 
