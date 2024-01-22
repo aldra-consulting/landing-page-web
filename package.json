@@ -18,7 +18,8 @@
     "dist/**"
   ],
   "engines": {
-    "node": ">= 18.12.1"
+    "node": ">=20",
+    "npm": ">=10"
   },
   "scripts": {
     "start": "run-s serve:dev",
