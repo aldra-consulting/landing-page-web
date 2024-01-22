@@ -1,7 +1,7 @@
 import { UserManager } from 'oidc-client-ts';
 
-import env from '@app/env';
-import AuthService from '@app/services/auth';
+import env from '@project/env';
+import AuthService from '@project/services/auth';
 
 export const auth = () =>
   new AuthService(
@@ -13,6 +13,6 @@ export const auth = () =>
       scope: env().OIDC_SCOPES,
       response_mode: 'query',
       automaticSilentRenew: false,
-      loadUserInfo: true
+      loadUserInfo: true,
     })
   );

@@ -3,15 +3,15 @@ import {
   component$,
   useOnWindow,
   useStore,
-  useStylesScoped$
+  useStylesScoped$,
 } from '@builder.io/qwik';
-import { DocumentHead } from '@builder.io/qwik-city';
+import { type DocumentHead } from '@builder.io/qwik-city';
 
-import Avatar from '@app/components/avatar';
-import Logo from '@app/components/logo';
-import SignInButton from '@app/components/sign-in-button';
-import { Theme } from '@app/enums';
-import { auth } from '@app/utils/auth';
+import Avatar from '@project/components/avatar';
+import Logo from '@project/components/logo';
+import SignInButton from '@project/components/sign-in-button';
+import { Theme } from '@project/enums';
+import { auth } from '@project/utils/auth';
 
 import styles from './styles.css?inline';
 
@@ -27,7 +27,7 @@ export default component$(() => {
         .getUser()
         .catch(auth().signInSilent)
         .catch(() => null)
-        .then(loggedInUser => {
+        .then((loggedInUser) => {
           user.name = loggedInUser?.profile.name;
         })
         .finally(() => {
@@ -59,7 +59,9 @@ export default component$(() => {
           )}
         </div>
       )}
-      <Logo id='logo' theme={Theme.DARK} />
+      <div id='logo-slot'>
+        <Logo theme={Theme.DARK} />
+      </div>
     </main>
   );
 });
@@ -70,7 +72,7 @@ export const head: DocumentHead = {
     {
       name: 'description',
       content:
-        'Aldra er et norsk konsulenthus som bistår bedrifter med å finne smarte løsninger til morgendagends utfordringer.'
-    }
-  ]
+        'Aldra er et norsk konsulenthus som bistår bedrifter med å finne smarte løsninger til morgendagends utfordringer.',
+    },
+  ],
 };

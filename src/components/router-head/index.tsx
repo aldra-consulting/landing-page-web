@@ -1,12 +1,9 @@
 import { component$ } from '@builder.io/qwik';
 import { useDocumentHead, useLocation } from '@builder.io/qwik-city';
 
-/**
- * The RouterHead component is placed inside of the document `<head>` element.
- */
-export const RouterHead = component$(() => {
+export default component$(() => {
   const head = useDocumentHead();
-  const { href } = useLocation();
+  const { url } = useLocation();
 
   return (
     <>
@@ -15,11 +12,11 @@ export const RouterHead = component$(() => {
         name='viewport'
         content='width=device-width, initial-scale=1, maximum-scale=1'
       />
-      <meta httpEquiv='X-UA-Compatible' content='IE=edge'></meta>
+      <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
 
       <title>{head.title}</title>
 
-      <link rel='canonical' href={href} />
+      <link rel='canonical' href={url.href} />
 
       <link
         rel='apple-touch-icon'
@@ -50,19 +47,23 @@ export const RouterHead = component$(() => {
       <link rel='preconnect' href='https://rsms.me/' />
       <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
 
-      {head.meta.map(m => (
-        <meta {...m} />
+      {head.meta.map((meta) => (
+        <meta key={meta.key} {...meta} />
       ))}
 
-      {head.links.map(l => (
-        <link {...l} />
+      {head.links.map((link) => (
+        <link key={link.key} {...link} />
       ))}
 
-      {head.styles.map(({ props, style }) => (
-        <style {...props} dangerouslySetInnerHTML={style} />
+      {head.styles.map(({ key, props, style }) => (
+        <style key={key} {...props} dangerouslySetInnerHTML={style} />
       ))}
 
-      <script src='/config.js'></script>
+      {head.scripts.map(({ key, props, script }) => (
+        <script key={key} {...props} dangerouslySetInnerHTML={script} />
+      ))}
+
+      <script src='/config.js' />
     </>
   );
 });

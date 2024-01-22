@@ -1,4 +1,4 @@
-import { User, UserManager } from 'oidc-client-ts';
+import { type User, type UserManager } from 'oidc-client-ts';
 
 export default class AuthService {
   #manager: UserManager;
@@ -14,12 +14,12 @@ export default class AuthService {
   signOut = async (): Promise<void> => this.#manager.signoutRedirect();
 
   getUser = async (): Promise<User | null> =>
-    this.#manager.getUser().then(user => {
+    this.#manager.getUser().then((user) => {
       if (user) {
         return user;
       }
 
-      return Promise.reject(null);
+      throw new Error('User not found');
     });
 
   completeSignIn = async (): Promise<void> =>

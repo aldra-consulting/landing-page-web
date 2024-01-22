@@ -1,17 +1,17 @@
 import { $, component$, useOnWindow } from '@builder.io/qwik';
 
-import { auth } from '@app/utils/auth';
+import { auth } from '@project/utils/auth';
 
 export default component$(() => {
-  const navigateToRoot = $(() => window.location.replace('/'));
-
   useOnWindow(
     'load',
     $(() =>
       auth()
         .completeSignIn()
         .catch(() => {})
-        .finally(navigateToRoot)
+        .finally(() => {
+          window.location.replace('/');
+        })
     )
   );
 

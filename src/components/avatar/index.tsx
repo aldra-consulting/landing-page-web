@@ -1,4 +1,8 @@
-import { HTMLAttributes, component$, useStylesScoped$ } from '@builder.io/qwik';
+import {
+  type HTMLAttributes,
+  component$,
+  useStylesScoped$,
+} from '@builder.io/qwik';
 
 import styles from './styles.css?inline';
 

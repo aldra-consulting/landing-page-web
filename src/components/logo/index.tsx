@@ -1,16 +1,22 @@
-import { Component, HTMLAttributes } from '@builder.io/qwik';
+import { type HTMLAttributes, component$ } from '@builder.io/qwik';
 
-import { Theme } from '@app/enums';
+import { Theme } from '@project/enums';
 
-interface Props extends HTMLAttributes<HTMLElement> {
+interface Props extends HTMLAttributes<SVGElement> {
+  height?: number;
   theme?: Theme;
 }
 
-const Logo: Component<Props> = ({ theme = Theme.LIGHT, ...props }) => {
+export default component$<Props>(({ height, theme, ...props }) => {
   const fill = theme === Theme.LIGHT ? '#2D3741' : 'white';
 
   return (
-    <svg viewBox='0 0 318 73' xmlns='http://www.w3.org/2000/svg' {...props}>
+    <svg
+      {...props}
+      height={height}
+      viewBox='0 0 318 73'
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <path
         d='M34.2595 42.6177C72.843 4.03426 78.4884 -4.03609 68.9344 35.1864C58.4921 76.5434 58.4921 76.5434 37.8136 69.4604C15.6067 61.2705 18.6438 58.2334 34.2595 42.6177Z'
         fill='#F4B400'
@@ -41,6 +47,4 @@ const Logo: Component<Props> = ({ theme = Theme.LIGHT, ...props }) => {
       />
     </svg>
   );
-};
-
-export default Logo;
+});

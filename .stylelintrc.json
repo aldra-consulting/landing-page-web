@@ -1,10 +1,6 @@
 {
   "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-prettier"
+    "stylelint-config-standard"
   ],
-  "rules": {
-    "max-empty-lines": 1,
-    "block-closing-brace-empty-line-before": "never"
-  }
+  "rules": {}
 }
