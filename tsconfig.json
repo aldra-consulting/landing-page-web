@@ -11,7 +11,7 @@
     ],
     "jsx": "react-jsx",
     "jsxImportSource": "@builder.io/qwik",
-    "outDir": "dist",
+    "outDir": "lib",
     "esModuleInterop": true,
     "isolatedModules": true,
     "downlevelIteration": true,
