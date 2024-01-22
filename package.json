@@ -7,12 +7,10 @@
     "type": "git",
     "url": "git@github.com:aldra-consulting/landing-page-web.git"
   },
-  "contributors": [
-    {
-      "name": "Alexander Zakharov (azaxarov)",
-      "email": "alexander.zakharov@aldra.no"
-    }
-  ],
+  "author": {
+    "name": "Alexander Zakharov (azaxarov)",
+    "email": "alexander.zakharov@aldra.no"
+  },
   "license": "AGPL-3.0",
   "private": true,
   "files": [
