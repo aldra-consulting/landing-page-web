@@ -1,3 +1,5 @@
+# [2.0.0](https://github.com/aldra-consulting/landing-page-web/compare/1.5.17...2.0.0) (2024-01-22)
+
 ## [1.5.17](https://github.com/aldra-consulting/landing-page-web/compare/1.5.16...1.5.17) (2023-12-30)
 
 
