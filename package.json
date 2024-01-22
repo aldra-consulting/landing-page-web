@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "@aldra/landing-page-web",
   "description": "Organisation's landing page.",
   "version": "1.5.17",
