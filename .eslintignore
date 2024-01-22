@@ -1,16 +1,25 @@
-coverage
+.DS_Store
+
+.github
+.husky
+.vscode
+
 lib
+coverage
 node_modules
 server
 
 .gitignore
 .eslintignore
-.husky
-.lintstagedrc
-.vscode
+.npmrc
 
-public/config.js
+README.md
+LICENSE
+
+!.*.json
 
 package-lock.json
+
+public/config.js
 
 *.css
