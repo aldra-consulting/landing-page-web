@@ -11,7 +11,7 @@
     "name": "Alexander Zakharov (azaxarov)",
     "email": "alexander.zakharov@aldra.no"
   },
-  "license": "AGPL-3.0",
+  "license": "UNLICENSED",
   "private": true,
   "files": [
     "dist/**"
